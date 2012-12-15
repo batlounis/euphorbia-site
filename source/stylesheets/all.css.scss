@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+@font-face{
+	font-family: MavenPro-Regular;
+	src: url('MavenPro-Regular.ttf');
+}
+
+@font-face{
+	font-family: IstokWeb-Regular;
+	src: url('IstokWeb-Regular.ttf');
+}
+
+
+body {
+	background: #d4d4d4 url("../images/background.jpg");
+	background-repeat: no-repeat;
+	text-align: center;
+	font-family: MavenPro-Regular;
+	font-size: 1em;
+}
+
+// Highlight selected nav item
+body.project header nav a.project, 
+body.research header nav a.research, 
+body.product header nav a.product, 
+body.be-eco header nav a.be-eco{
+	background-color: rgba(#567317, .64);
+}
+
+h1{
+	background-image: url("../images/euphorbia.png");
+	padding-right: 240px;
+	padding-bottom: 140px;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	display: inline-block;
+}
+
+a{
+	text-decoration: none;
+	color: lighten(black, 30%);
+}
+
+header nav{	
+	a{
+		text-transform: uppercase;
+		font-size: 1.8em;
+		color: rgba(white, .7);
+		padding: .3em 1.5em;
+		margin-right: .1em;
+		margin-bottom: .2em;
+		background-color: rgba(#050e00, .64);
+		display: inline-block;
+		
+		&:last-child{
+			margin-right: 0;
+		}
+		
+		&:hover{
+			background-color: rgba(#050e00, .8);
+		}
+	}
+}
+
+section{
+	width: 80%;
+	margin: 1em auto;
+	background-color: rgba(black, .7);
+	display: inline-block;
+	font-family: IstokWeb-Regular;
+	text-align: left;
+	color: white;
+	
+	h3{
+		font-size: 1.5em;
+		margin: 1em 0 0 2%;
+		
+	}
+	
+	p{
+		margin-top: .5em;
+		margin-left: 2%;
+	}
+	
+	nav{
+		width: 100%;
+		background-color: black;
+		display: table;
+		margin: 1em 0 0 0;
+		font-family: MavenPro-Regular;
+		text-align: center;
+		
+		a{
+			text-transform: lowercase;
+			color: white;
+			display: table-cell;
+			font-size: 1.5em;
+			padding: .5em;
+			
+			&:hover{
+				color: #cdcdcd;
+			}
+			
+			&.selected{
+				color: #c7bf67;
+			}
+		}
+	}
+}
+
+footer{
+	.parque_natural{
+		display: block;
+		float: right;
+	}
+	
+	.sponsors_bar{
+		background-color: rgba(black, .9);
+		text-align: left;
+		padding: .5em;
+		float: none;
+		clear: both;
+		
+		a{
+			float: right;
+			font-size: 1.5em;
+			color: #bbbbbb;
+		}
+	}	
+}

@@ -1,0 +1,31 @@
+!!! 5
+%html
+	%head
+		%meta{'http-equiv' => 'Content-Type', :content => 'text/html', :charset => 'utf-8'}
+		%meta{:content=>'user-scalable = no', :name=>'viewport'}
+		- if data.page.title
+			%title= data.page.title + ' - Euphorbia Team'
+		- else
+		%title= 'Team Euphorbia'
+		= stylesheet_link_tag "normalize", "all" 
+		/= javascript_include_tag  "all"
+	
+	%body{:class=>"#{page_classes}"}
+	
+		%header
+			%a{:href=>'/', :title=>'Team Euphorbia'}
+				%h1
+			%nav
+				%a.project{:href=>'project.html'} Project
+				%a.research{:href=>'research.html'} Research
+				%a.product{:href=>'product.html'} Product
+				%a.be-eco{:href=>'be-eco.html'} Try It!
+			
+		%section
+			= yield
+		
+		%footer
+			%img.parque_natural{:src=>'images/parque-natural.png', :title=>'Parque Natural, Life EcoCompativel'}
+			.sponsors_bar
+				%img{:src=>'images/cmu-portugal.png', :title=>'Carnegie Mellon | Portugal'}
+				%a{:href=>'#sponsors'}Sponsors

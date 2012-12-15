@@ -27,6 +27,9 @@
 # with_layout :admin do
 #   page "/admin/*"
 # end
+with_layout :layout do
+  page "/*"
+end
 
 # Proxy (fake) files
 # page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
@@ -55,6 +58,9 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
+  # Pretty URLs
+  # activate :directory_indexes
+  
   # For example, change the Compass output style for deployment
   # activate :minify_css
 
