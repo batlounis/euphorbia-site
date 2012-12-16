@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import "media_queries";
 
 @font-face{
 	font-family: MavenPro-Regular;
@@ -14,6 +15,7 @@
 body {
 	background: #d4d4d4 url("../images/background.jpg");
 	background-repeat: no-repeat;
+	background-size: cover;
 	text-align: center;
 	font-family: MavenPro-Regular;
 	font-size: 1em;
@@ -39,7 +41,7 @@ h1{
 
 a{
 	text-decoration: none;
-	color: lighten(black, 30%);
+	color: darken(white, 30%);
 }
 
 header nav{	
@@ -66,6 +68,7 @@ header nav{
 section{
 	width: 80%;
 	margin: 1em auto;
+	padding: 1em 2em;
 	background-color: rgba(black, .7);
 	display: inline-block;
 	font-family: IstokWeb-Regular;
@@ -74,20 +77,19 @@ section{
 	
 	h3{
 		font-size: 1.5em;
-		margin: 1em 0 0 2%;
+		margin: 1em 0 .5em 0;
 		
 	}
 	
 	p{
-		margin-top: .5em;
-		margin-left: 2%;
+		margin: .7em 0;
 	}
 	
 	nav{
 		width: 100%;
 		background-color: black;
 		display: table;
-		margin: 1em 0 0 0;
+		margin: 0;
 		font-family: MavenPro-Regular;
 		text-align: center;
 		
@@ -106,6 +108,56 @@ section{
 				color: #c7bf67;
 			}
 		}
+	}
+}
+
+.project section{
+	display: none;
+	
+	&:target{
+		display: inherit;
+	}
+}
+
+.text_content{
+	width: 75%;
+	display: inline-block;
+	vertical-align: top;
+	
+	@include screen(1000){
+		width: 100%;
+	}
+}
+
+figure{
+	width: 20%;
+	padding-left: 2%;
+	margin-left: 1em;
+	white-space: nowrap;
+	border-left: solid 1px white;
+	display: inline-block;
+	
+	@include screen(1000){
+		display: block;
+		border-left-style: none;
+		margin-left: 0;
+		padding-left: 0;
+		width: auto;
+		
+		img{
+			width: auto !important;
+			height: auto !important;
+		}
+	}
+	
+	img{
+		width: 100%;
+		height: auto;
+		border: solid 1px white;
+	}
+	
+	figcaption{
+		font-size: .8em;
 	}
 }
 
@@ -129,3 +181,74 @@ footer{
 		}
 	}	
 }
+
+// TEAM section
+.team_members{
+	width: 100%;
+	
+	.member{
+		display: inline-block;
+		width: 24%;
+		box-sizing: border-box;
+		margin-bottom: 2em;
+		vertical-align: top;
+	}
+	
+	figure{
+		width: auto;
+		padding-left: inherit;
+		margin-left: inherit;
+		white-space: inherit;
+		border-style: none;
+		display: inherit;
+		
+		img{
+			border-style: none;
+		}
+	}
+	
+	.background:before, .contact:before{
+		display: block;
+		font-size: 1em;
+		opacity: .7;
+	}
+
+	.background:before{
+		content: 'Background:';
+	}
+	
+	.contact:before{
+		content: 'Contact:';
+	}
+	
+	.background, .contact{
+		font-size: .8em;
+		margin-bottom: 1em;
+	}
+	
+	.contact *{
+		font-size: 1.3em;
+	}
+	
+	@include screen(1000){
+		.member{
+			display: inline-block;
+			width: 49%;
+			
+			.info{
+				width: 80%;
+			}
+			
+			figure{
+				height: 20em;
+				width: 100%;
+				overflow: hidden;
+			}
+			
+		}
+	}
+}
+
+
+
+

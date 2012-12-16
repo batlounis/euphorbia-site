@@ -2,11 +2,72 @@
 title: Project
 ---
 
-%nav
-	%a.selected{:href=>'#client'} The Client
-	%a{:href=>'#project'} About the Project
-	%a{:href=>'#team'} The Team
+%section#client
+	%nav
+		%a.selected{:href=>'#client'} The Client
+		%a{:href=>'#project'} About the Project
+		%a{:href=>'#team'} The Team
 
-%h3 The Client
+	%h3 The Client
+	.text_content
+		%p Parque Natural da Madeira is responsible for managing and protecting the areas of the archipelago that are part of the Natural Reserves. These areas are located both in the sea and in land and cover almost 2/3 of the archipelagos total area. 
+		%p The main goal of this organization is to protect the fauna and flora that are unique to this region and some species that are endangered or critically endangered.
+		%p The protected areas include not only full nature reserve but also partial nature reserve. 
+		%p Laurissilva forest (classified by UNESCO as world heritage), Ponta de Sao Lourenco, Garajau and Desertas islands are just examples of areas that are included in the natural reserves and that were part of this project.
+	%figure
+		%img{:src=>'images/ponta-sao-lourenco.jpg', :width=>228, :height=>303}
+		%figcaption Ponta de São Lourenço
+	
+%section#project
+	%nav
+		%a{:href=>'#client'} The Client
+		%a.selected{:href=>'#project'} About the Project
+		%a{:href=>'#team'} The Team
 
-%p text goes here
+	%h3 About the Project
+	%p Parque Natural da Madeira and team Euphorbia joined efforts in order to research, understand and implement new ways of increasing the population’s awareness for environmental problems. The goal of this project is to influence local population and visitors to choose environmental best practices that will protected the ecosystem’s biodiversity and will guarantee economic sustainability
+
+%section#team
+	%nav
+		%a{:href=>'#client'} The Client
+		%a{:href=>'#project'} About the Project
+		%a.selected{:href=>'#team'} The Team
+
+
+	%h3 The Team
+	.team_members
+		.member
+			%figure
+				%img{:src=>'images/julia.jpg'}
+			.info
+				.name Julia Silva
+				.background Process / Project Manager with 7 years experience at Portugal Telecom
+				.contact
+					%a{:href=>'mailto:jfc.silva@gmail.com'} jfc.silva@gmail.com
+		.member
+			%figure
+				%img{:src=>'images/salim.jpg'}
+			.info
+				.name Salim Batlouni
+				.background Artistic computer engineer
+				.contact
+					%a{:href=>'mailto:batlounis@gmail.com'} batlounis@gmail.com
+		.member
+			%figure
+				%img{:src=>'images/kara.jpg'}
+			.info
+				.name Kara Rennert
+				.background Project Manager with 13 years experience (additional experience in interaction and interface design, usability testing, instructional design and technical writing)
+				.contact
+					%a{:href=>'mailto:kara.cmu@gmail.com'} kara.cmu@gmail.com
+		.member
+			%figure
+				%img{:src=>'images/ana.jpg'}
+			.info
+				.name Ana Alves
+				.background UX Designer with 4 years experience at Novabase
+				.contact
+					%a{:href=>'mailto:anaazziulalves@gmail.com'} anaazziulalves@gmail.com
+
+
+
