@@ -121,6 +121,8 @@ section{
 
 .text_content{
 	width: 75%;
+	box-sizing: border-box;
+	margin: 0;
 	display: inline-block;
 	vertical-align: top;
 	
@@ -129,31 +131,38 @@ section{
 	}
 }
 
-figure{
-	width: 20%;
-	padding-left: 2%;
-	margin-left: 1em;
-	white-space: nowrap;
-	border-left: solid 1px white;
-	display: inline-block;
-	
-	@include screen(1000){
-		display: block;
-		border-left-style: none;
-		margin-left: 0;
-		padding-left: 0;
-		width: auto;
+.sidebar{
+	@include min-screen(1000){
+		width: 24%;
+		box-sizing: border-box;
+		padding-left: 2%;
+		margin: 0;
+		border-left: solid 1px white;
+		display: inline-block;
+		// white-space: nowrap;
+		
+		figure{
+			margin-top: 0;
+		}
 		
 		img{
-			width: auto !important;
-			height: auto !important;
+			width: 100%;			
 		}
 	}
-	
+}
+
+figure{
+	margin-bottom: 1em;
+	margin-top: 2em;
+		
 	img{
 		width: 100%;
 		height: auto;
-		border: solid 1px white;
+		border: none;
+		
+		@include min-screen(800){
+			width: auto;
+		}
 	}
 	
 	figcaption{
@@ -162,9 +171,27 @@ figure{
 }
 
 footer{
-	.parque_natural{
-		display: block;
-		float: right;
+	position: relative;
+	padding: 0;
+	
+	#sponsors{
+		width: 100%;
+		margin: 0;
+		height: 0;
+		// overflow: hidden;
+		background-image: url('../images/sponsors.png');
+		background-color: black;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		position: absolute;
+		-webkit-transition: height 1s;		
+		bottom: 100%;
+		
+		&.show{
+			height: 10em;
+			// overflow: visible;
+
+		}
 	}
 	
 	.sponsors_bar{
@@ -173,12 +200,15 @@ footer{
 		padding: .5em;
 		float: none;
 		clear: both;
+		position: relative;
 		
 		a{
-			float: right;
+			position: absolute;
+			right: 1em;
 			font-size: 1.5em;
 			color: #bbbbbb;
 		}
+		
 	}	
 }
 
@@ -192,6 +222,10 @@ footer{
 		box-sizing: border-box;
 		margin-bottom: 2em;
 		vertical-align: top;
+	}
+	
+	.info{
+		padding-right: 1em;
 	}
 	
 	figure{

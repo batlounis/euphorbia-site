@@ -8,7 +8,7 @@
 		- else
 		%title= 'Team Euphorbia'
 		= stylesheet_link_tag "normalize", "all" 
-		/= javascript_include_tag  "all"
+		= javascript_include_tag  "all"
 	
 	%body{:class=>"#{page_classes}"}
 	
@@ -25,5 +25,6 @@
 		
 		%footer
 			.sponsors_bar
+				#sponsors
 				%img{:src=>'images/cmu-portugal.png', :title=>'Carnegie Mellon | Portugal'}
-				%a{:href=>'#sponsors'}Sponsors
+				%a{:href=>'#', :onclick=>'return toggleSponsors();'}Sponsors
