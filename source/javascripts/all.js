@@ -11,3 +11,13 @@ toggleSponsors = function(){
 	
 	return false;
 }
+
+show = function(element_id){
+	var id = document.getElementById(element_id);
+	var sections = document.getElementsByTagName('section');
+	for(var i =0; i < sections.length; i++){
+		sections[i].className= "hidden";
+	}
+	id.className = "show";
+	return false;
+}

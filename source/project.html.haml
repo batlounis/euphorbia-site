@@ -4,9 +4,9 @@ title: Project
 
 %section#client
 	%nav
-		%a.selected{:href=>'#client'} The Client
-		%a{:href=>'#project'} About the Project
-		%a{:href=>'#team'} The Team
+		%a.selected{:href=>'#', :onclick=>'return show("client");'} The Client
+		%a{:href=>'#', :onclick=>'return show("project");'} About the Project
+		%a{:href=>'#', :onclick=>'return show("team");'} The Team
 
 	%h3 The Client
 	.text_content
@@ -14,6 +14,9 @@ title: Project
 		%p The main goal of this organization is to protect the fauna and flora that are unique to this region and some species that are endangered or critically endangered.
 		%p The protected areas include not only full nature reserve but also partial nature reserve. 
 		%p Laurissilva forest (classified by UNESCO as world heritage), Ponta de Sao Lourenco, Garajau and Desertas islands are just examples of areas that are included in the natural reserves and that were part of this project.
+		%figure
+			%img{:src=>'images/parque-natural.png', :width=>228, :height=>303}
+			%figcaption Parque Natural, sponsors of the project
 	.sidebar
 		%figure
 			%img{:src=>'images/ponta-sao-lourenco.jpg', :width=>228, :height=>303}
@@ -21,9 +24,9 @@ title: Project
 	
 %section#project
 	%nav
-		%a{:href=>'#client'} The Client
-		%a.selected{:href=>'#project'} About the Project
-		%a{:href=>'#team'} The Team
+		%a{:href=>'#', :onclick=>'return show("client");'} The Client
+		%a.selected{:href=>'#', :onclick=>'return show("project");'} About the Project
+		%a{:href=>'#', :onclick=>'return show("team");'} The Team
 
 	%h3 About the Project
 	.text_content
@@ -38,9 +41,9 @@ title: Project
 	
 %section#team
 	%nav
-		%a{:href=>'#client'} The Client
-		%a{:href=>'#project'} About the Project
-		%a.selected{:href=>'#team'} The Team
+		%a{:href=>'#', :onclick=>'return show("client");'} The Client
+		%a{:href=>'#', :onclick=>'return show("project");'} About the Project
+		%a.selected{:href=>'#', :onclick=>'return show("team");'} The Team
 
 
 	%h3 The Team

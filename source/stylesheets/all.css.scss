@@ -13,9 +13,9 @@
 
 
 body {
-	background: #d4d4d4 url("../images/background.jpg");
+	background: #000f05 url("../images/background.jpg");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100%;
 	text-align: center;
 	font-family: MavenPro-Regular;
 	font-size: 1em;
@@ -67,6 +67,7 @@ header nav{
 
 section{
 	width: 80%;
+	max-width:60em;
 	margin: 1em auto;
 	padding: 1em 2em;
 	background-color: rgba(black, .7);
@@ -113,9 +114,14 @@ section{
 
 .project section, .research section{
 	display: none;
+
 	
-	&:target{
+	&:first-of-type, &.show{
 		display: inherit;
+	}
+	
+	&.hidden{
+		display: none;
 	}
 }
 
@@ -179,7 +185,8 @@ footer{
 		height: 0;
 		background-image: url('../images/sponsors.png');
 		background-color: black;
-		background-size: 100%;
+		background-size: 90%;
+		background-position: center 1em;
 		background-repeat: no-repeat;
 		position: absolute;
 		-webkit-transition: height 1s;		
@@ -204,9 +211,32 @@ footer{
 			right: 1em;
 			font-size: 1.5em;
 			color: #bbbbbb;
+			
+			&:before{
+				content: '';
+				background-image: url('../images/arrow-up.png');
+				background-repeat: no-repeat;
+				width: 1em;
+				height: .8em;
+				display: inline-block;
+			}
 		}
 		
 	}	
+}
+
+// WELCOME section
+.index{
+	section{
+		background: none;
+	}
+	
+	p{
+		display: inline;
+		background-color: rgba(black, .5);
+		font-size: 2em;
+		text-align: left;
+	}
 }
 
 // TEAM section
