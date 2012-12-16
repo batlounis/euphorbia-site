@@ -11,18 +11,20 @@
 		= javascript_include_tag  "all"
 	
 	%body{:class=>"#{page_classes}"}
+		.wrapper
+			%header
+				%a{:href=>'/', :title=>'Team Euphorbia'}
+					%h1
+				%nav
+					%a.project{:href=>'project.html'} Project
+					%a.research{:href=>'research.html'} Research
+					%a.product{:href=>'product.html'} Product
+					%a.be-eco{:href=>'be-eco-app/index_en.html'} Play!
 	
-		%header
-			%a{:href=>'/', :title=>'Team Euphorbia'}
-				%h1
-			%nav
-				%a.project{:href=>'project.html'} Project
-				%a.research{:href=>'research.html'} Research
-				%a.product{:href=>'product.html'} Product
-				%a.be-eco{:href=>'be-eco-app/index_en.html'} Play!
-		
-		= yield
-		
+			= yield
+
+			.push
+	
 		%footer
 			.sponsors_bar
 				#sponsors

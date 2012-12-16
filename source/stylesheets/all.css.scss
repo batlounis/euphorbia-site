@@ -11,14 +11,24 @@
 	src: url('IstokWeb-Regular.ttf');
 }
 
+html, body{
+	height: 100%;
+}
 
-body {
+body{
 	background: #000f05 url("../images/background.jpg");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	text-align: center;
 	font-family: MavenPro-Regular;
 	font-size: 1em;
+}
+
+.wrapper{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -3em;
 }
 
 // Highlight selected nav item
@@ -176,8 +186,12 @@ figure{
 	}
 }
 
+footer, .push{
+	height: 3em;
+}
+
 footer{
-	position: relative;
+	width: 100%;
 	padding: 0;
 	
 	#sponsors{
