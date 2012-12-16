@@ -68,6 +68,7 @@ header nav{
 section{
 	width: 80%;
 	max-width: 980px;
+	box-sizing: border-box;
 	margin: 1em auto;
 	padding: 1em 2em;
 	background-color: rgba(black, .7);
@@ -112,7 +113,7 @@ section{
 	}
 }
 
-.project section, .research section{
+.project section, .research section, .product section{
 	display: none;
 
 	
@@ -238,9 +239,19 @@ footer{
 
 // WELCOME section
 .index{
-	section img{
-		display: table;
-		margin: auto;
+	section{
+		background-color: rgba(black, .64);
+		
+		img{
+			display: table;
+			margin: auto;
+		}
+	}
+	
+	img.caption{
+		width: 80%;
+		max-width: 980px;
+		box-sizing: border-box;
 	}
 	
 	p{
