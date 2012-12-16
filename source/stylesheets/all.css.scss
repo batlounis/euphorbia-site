@@ -183,7 +183,6 @@ footer{
 		width: 100%;
 		margin: 0;
 		height: 0;
-		background-image: url('../images/sponsors.png');
 		background-color: black;
 		background-size: 90%;
 		background-position: center 1em;
@@ -192,9 +191,21 @@ footer{
 		-webkit-transition: height 1s;		
 		bottom: 100%;
 		left: 0;
+		overflow: hidden;
 		
 		&.show{
 			height: 10em;
+		}
+		
+		.image{
+			background-image: url('../images/sponsors.png');
+			background-repeat: no-repeat;
+			background-size: contain;
+			height: 10em;
+			width: 100%;
+			max-width: 1200px;
+			margin: auto;
+			display: block;
 		}
 	}
 	
@@ -227,8 +238,9 @@ footer{
 
 // WELCOME section
 .index{
-	section{
-		background: none;
+	section img{
+		display: table;
+		margin: auto;
 	}
 	
 	p{
