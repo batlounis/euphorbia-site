@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' content='text/html' http-equiv='Content-Type' />
+    <meta content='width=device-width, initial-scale=1.0, user-scalable=no' name='viewport' />
+    <title>Project - Euphorbia Team</title>
+    <title>Team Euphorbia</title>
+    <link href="/stylesheets/normalize.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/all.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/all.js" type="text/javascript"></script>
+  </head>
+  <body class='project'>
+    <div class='wrapper'>
+      <header>
+        <a href='/' title='Team Euphorbia'>
+          <h1></h1>
+        </a>
+        <nav>
+          <a class='project' href='project.html'>Project</a>
+          <a class='research' href='research.html'>Research</a>
+          <a class='product' href='product.html'>Product</a>
+          <a class='be-eco' href='be-eco-app/index_en.html'>Play!</a>
+        </nav>
+      </header>
+      <section id='client'>
+        <nav>
+          <a class='selected' href='#' onclick='return show("client");'>The Client</a>
+          <a href='#' onclick='return show("project");'>About the Project</a>
+          <a href='#' onclick='return show("team");'>The Team</a>
+        </nav>
+        <h3>The Client</h3>
+        <div class='text_content'>
+          <p>Parque Natural da Madeira is responsible for managing and protecting the areas of the archipelago that are part of the Natural Reserves. These areas are located both in the sea and in land and cover almost 2/3 of the archipelagos total area.</p>
+          <p>The main goal of this organization is to protect the fauna and flora that are unique to this region and some species that are endangered or critically endangered.</p>
+          <p>The protected areas include not only full nature reserve but also partial nature reserve.</p>
+          <p>Laurissilva forest (classified by UNESCO as world heritage), Ponta de Sao Lourenco, Garajau and Desertas islands are just examples of areas that are included in the natural reserves and that were part of this project.</p>
+          <figure>
+            <img height='303' src='images/parque-natural.png' width='228' />
+            <figcaption>Parque Natural, sponsors of the project</figcaption>
+          </figure>
+        </div>
+        <div class='sidebar'>
+          <figure>
+            <img height='303' src='images/ponta-sao-lourenco.jpg' width='228' />
+            <figcaption>Ponta de São Lourenço</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id='project'>
+        <nav>
+          <a href='#' onclick='return show("client");'>The Client</a>
+          <a class='selected' href='#' onclick='return show("project");'>About the Project</a>
+          <a href='#' onclick='return show("team");'>The Team</a>
+        </nav>
+        <h3>About the Project</h3>
+        <div class='text_content'>
+          <p>Parque Natural da Madeira and team Euphorbia joined efforts in order to research, understand and implement new ways of increasing the population’s awareness for environmental problems. The goal of this project is to influence local population and visitors to choose environmental best practices that will protected the ecosystem’s biodiversity and will guarantee economic sustainability</p>
+          <figure>
+            <img src='images/field-research.jpg' />
+            <figcaption>Field Research in Camara de Lobos</figcaption>
+          </figure>
+        </div>
+        <div class='sidebar'>
+          <figure>
+            <img src='images/farmer-santa.jpg' />
+            <figcaption>Farmer in Santa</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id='team'>
+        <nav>
+          <a href='#' onclick='return show("client");'>The Client</a>
+          <a href='#' onclick='return show("project");'>About the Project</a>
+          <a class='selected' href='#' onclick='return show("team");'>The Team</a>
+        </nav>
+        <h3>The Team</h3>
+        <div class='team_members'>
+          <div class='member'>
+            <figure>
+              <img src='images/julia.jpg' />
+            </figure>
+            <div class='info'>
+              <div class='name'>Julia Silva</div>
+              <div class='background'>Process / Project Manager with 7 years experience at Portugal Telecom</div>
+              <div class='contact'>
+                <a href='mailto:jfc.silva@gmail.com'>jfc.silva@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class='member'>
+            <figure>
+              <img src='images/salim.jpg' />
+            </figure>
+            <div class='info'>
+              <div class='name'>Salim Batlouni</div>
+              <div class='background'>Artistic computer engineer</div>
+              <div class='contact'>
+                <a href='mailto:batlounis@gmail.com'>batlounis@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class='member'>
+            <figure>
+              <img src='images/kara.jpg' />
+            </figure>
+            <div class='info'>
+              <div class='name'>Kara Rennert</div>
+              <div class='background'>Project Manager with 13 years experience (additional experience in interaction and interface design, usability testing, instructional design and technical writing)</div>
+              <div class='contact'>
+                <a href='mailto:kara.cmu@gmail.com'>kara.cmu@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class='member'>
+            <figure>
+              <img src='images/ana.jpg' />
+            </figure>
+            <div class='info'>
+              <div class='name'>Ana Alves</div>
+              <div class='background'>UX Designer with 4 years experience at Novabase</div>
+              <div class='contact'>
+                <a href='mailto:anaazziulalves@gmail.com'>anaazziulalves@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class='push'></div>
+    </div>
+    <footer>
+      <div class='sponsors_bar'>
+        <div id='sponsors'>
+          <div class='image'></div>
+        </div>
+        <img src='images/cmu-portugal.png' title='Carnegie Mellon | Portugal' />
+        <a href='#' onclick='return toggleSponsors();'>Sponsors</a>
+      </div>
+    </footer>
+  </body>
+</html>

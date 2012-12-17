@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' content='text/html' http-equiv='Content-Type' />
+    <meta content='width=device-width, initial-scale=1.0, user-scalable=no' name='viewport' />
+    <title>Product - Euphorbia Team</title>
+    <title>Team Euphorbia</title>
+    <link href="/stylesheets/normalize.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/all.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/all.js" type="text/javascript"></script>
+  </head>
+  <body class='product'>
+    <div class='wrapper'>
+      <header>
+        <a href='/' title='Team Euphorbia'>
+          <h1></h1>
+        </a>
+        <nav>
+          <a class='project' href='project.html'>Project</a>
+          <a class='research' href='research.html'>Research</a>
+          <a class='product' href='product.html'>Product</a>
+          <a class='be-eco' href='be-eco-app/index_en.html'>Play!</a>
+        </nav>
+      </header>
+      <section id='product-video'>
+        <nav>
+          <a class='selected' href='#' onclick='return show("product-video");'>Product Video</a>
+          <a href='#' onclick='return show("design-language");'>Design Language</a>
+          <a href='#' onclick='return show("how-it-works");'>How It Works</a>
+        </nav>
+        <h3>Product Video</h3>
+        <div class='text_content'>
+          <p>Team Euphorbia designed a learning experience that includes a web app as well as a set of playing cards.</p>
+          <!-- video goes here -->
+        </div>
+        <div class='sidebar'>
+          <figure>
+            <img height='303' src='images/pigeon.png' width='228' />
+            <figcaption>Child's pigeon drawing</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id='design-language'>
+        <nav>
+          <a href='#' onclick='return show("product-video");'>Product Video</a>
+          <a class='selected' href='#' onclick='return show("design-language");'>Design Language</a>
+          <a href='#' onclick='return show("how-it-works");'>How It Works</a>
+        </nav>
+        <h3>Design Language</h3>
+        <div class='text_content'>
+          <p>The design elements used in the cards and the web app interface were co-design in collaboration with children from fishermen and farmer’s communities in Madeira.</p>
+          <figure>
+            <img src='images/drawings-integration.png' />
+            <figcaption>Example of the integration of the children drawings in the final product</figcaption>
+          </figure>
+        </div>
+        <div class='sidebar'>
+          <figure>
+            <img src='images/drawing-exercise.jpg' />
+            <figcaption>Co-design exercise in the school of Camara de Lobos</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id='how-it-works'>
+        <nav>
+          <a href='#' onclick='return show("product-video");'>Product Video</a>
+          <a href='#' onclick='return show("design-language");'>Design Language</a>
+          <a class='selected' href='#' onclick='return show("how-it-works");'>How It Works</a>
+        </nav>
+        <h3>How It Works</h3>
+        <div class='text_content'>
+          <p>Be Eco is a journey where we accompany a character throughout his day of work. During his journey he chooses actions to perform.</p>
+          <figure>
+            <img src='images/selection-screen.png' />
+            <figcaption>Selection screen</figcaption>
+          </figure>
+          <p>Based on the action, an animation forwards in time and shows the consequences.</p>
+          <figure>
+            <img src='images/adventure.png' />
+            <figcaption>Overall look of the adventure</figcaption>
+          </figure>
+          <p>The score affects the catch we get at the end.</p>
+          <figure>
+            <img src='images/end-screen-boxes.png' />
+            <figcaption>End screen boxes</figcaption>
+          </figure>
+        </div>
+        <div class='sidebar'>
+          <figure>
+            <img src='images/characters.png' />
+            <figcaption>António and Manel are the characters of Be Eco</figcaption>
+          </figure>
+        </div>
+      </section>
+      <div class='push'></div>
+    </div>
+    <footer>
+      <div class='sponsors_bar'>
+        <div id='sponsors'>
+          <div class='image'></div>
+        </div>
+        <img src='images/cmu-portugal.png' title='Carnegie Mellon | Portugal' />
+        <a href='#' onclick='return toggleSponsors();'>Sponsors</a>
+      </div>
+    </footer>
+  </body>
+</html>

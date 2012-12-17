@@ -1,0 +1,295 @@
+@font-face {
+  font-family: MavenPro-Regular;
+  src: url("MavenPro-Regular.ttf"); }
+
+@font-face {
+  font-family: IstokWeb-Regular;
+  src: url("IstokWeb-Regular.ttf"); }
+
+/* line 14, all.css.scss */
+html, body {
+  height: 100%; }
+
+/* line 18, all.css.scss */
+body {
+  background: #000f05 url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+  font-family: MavenPro-Regular;
+  font-size: 1em; }
+
+/* line 27, all.css.scss */
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -3em; }
+
+/* line 38, all.css.scss */
+body.project header nav a.project,
+body.research header nav a.research,
+body.product header nav a.product,
+body.be-eco header nav a.be-eco {
+  background-color: rgba(86, 115, 23, 0.64); }
+
+/* line 42, all.css.scss */
+h1 {
+  background-image: url("../images/euphorbia.png");
+  padding-right: 240px;
+  padding-bottom: 140px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  display: inline-block; }
+
+/* line 52, all.css.scss */
+a {
+  text-decoration: none;
+  color: #b3b3b3; }
+
+/* line 58, all.css.scss */
+header nav a {
+  text-transform: uppercase;
+  font-size: 1.8em;
+  color: rgba(255, 255, 255, 0.7);
+  padding: .3em 1.5em;
+  margin-right: .1em;
+  margin-bottom: .2em;
+  background-color: rgba(5, 14, 0, 0.64);
+  display: inline-block; }
+  /* line 68, all.css.scss */
+  header nav a:last-child {
+    margin-right: 0; }
+  /* line 72, all.css.scss */
+  header nav a:hover {
+    background-color: rgba(5, 14, 0, 0.8); }
+
+/* line 78, all.css.scss */
+section {
+  width: 80%;
+  max-width: 980px;
+  box-sizing: border-box;
+  margin: 1em auto;
+  padding: 1em 2em;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  font-family: IstokWeb-Regular;
+  text-align: left;
+  color: white; }
+  /* line 90, all.css.scss */
+  section h3 {
+    font-size: 1.5em;
+    margin: 1em 0 .5em 0; }
+  /* line 96, all.css.scss */
+  section p {
+    margin: .7em 1em .7em 0; }
+  /* line 100, all.css.scss */
+  section nav {
+    width: 100%;
+    background-color: black;
+    display: table;
+    margin: 0;
+    font-family: MavenPro-Regular;
+    text-align: center; }
+    /* line 108, all.css.scss */
+    section nav a {
+      text-transform: lowercase;
+      color: white;
+      display: table-cell;
+      font-size: 1.5em;
+      padding: .5em; }
+      /* line 115, all.css.scss */
+      section nav a:hover {
+        color: #cdcdcd; }
+      /* line 119, all.css.scss */
+      section nav a.selected {
+        color: #c7bf67; }
+
+/* line 126, all.css.scss */
+.project section, .research section, .product section {
+  display: none; }
+  /* line 130, all.css.scss */
+  .project section:first-of-type, .project section.show, .research section:first-of-type, .research section.show, .product section:first-of-type, .product section.show {
+    display: inherit; }
+  /* line 134, all.css.scss */
+  .project section.hidden, .research section.hidden, .product section.hidden {
+    display: none; }
+
+/* line 139, all.css.scss */
+.text_content {
+  width: 75%;
+  box-sizing: border-box;
+  margin: 0;
+  display: inline-block;
+  vertical-align: top; }
+  @media screen and (max-width: 1000px) {
+    /* line 139, all.css.scss */
+    .text_content {
+      width: 100%; } }
+
+@media screen and (min-width: 1000px) {
+  /* line 151, all.css.scss */
+  .sidebar {
+    width: 24%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    margin: 0;
+    border-left: solid 1px white;
+    display: inline-block; }
+    /* line 160, all.css.scss */
+    .sidebar figure {
+      margin-top: 0; }
+    /* line 164, all.css.scss */
+    .sidebar img {
+      width: 100%; } }
+
+/* line 170, all.css.scss */
+figure {
+  margin-bottom: 1em;
+  margin-top: 2em; }
+  /* line 174, all.css.scss */
+  figure img {
+    width: 100%;
+    height: auto;
+    border: none; }
+    @media screen and (min-width: 800px) {
+      /* line 174, all.css.scss */
+      figure img {
+        width: auto; } }
+  /* line 184, all.css.scss */
+  figure figcaption {
+    font-size: .8em; }
+
+/* line 189, all.css.scss */
+footer, .push {
+  height: 3em; }
+
+/* line 193, all.css.scss */
+footer {
+  width: 100%;
+  padding: 0; }
+  /* line 197, all.css.scss */
+  footer #sponsors {
+    width: 100%;
+    margin: 0;
+    height: 0;
+    background-color: black;
+    background-size: 90%;
+    background-position: center 1em;
+    background-repeat: no-repeat;
+    position: absolute;
+    -webkit-transition: height 1s;
+    bottom: 100%;
+    left: 0;
+    overflow: hidden; }
+    /* line 211, all.css.scss */
+    footer #sponsors.show {
+      height: 10em; }
+    /* line 215, all.css.scss */
+    footer #sponsors .image {
+      background-image: url("../images/sponsors.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 10em;
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      display: block; }
+  /* line 227, all.css.scss */
+  footer .sponsors_bar {
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: left;
+    padding: .5em;
+    float: none;
+    clear: both;
+    position: relative; }
+    /* line 235, all.css.scss */
+    footer .sponsors_bar a {
+      position: absolute;
+      right: 1em;
+      font-size: 1.5em;
+      color: #bbbbbb; }
+      /* line 241, all.css.scss */
+      footer .sponsors_bar a:before {
+        content: '';
+        background-image: url("../images/arrow-up.png");
+        background-repeat: no-repeat;
+        width: 1em;
+        height: .8em;
+        display: inline-block; }
+
+/* line 256, all.css.scss */
+.index section {
+  background-color: rgba(0, 0, 0, 0.64); }
+  /* line 259, all.css.scss */
+  .index section img {
+    display: table;
+    margin: auto; }
+/* line 265, all.css.scss */
+.index img.caption {
+  width: 80%;
+  max-width: 980px;
+  box-sizing: border-box; }
+/* line 271, all.css.scss */
+.index p {
+  display: inline;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 2em;
+  text-align: left; }
+
+/* line 280, all.css.scss */
+.team_members {
+  width: 100%; }
+  /* line 283, all.css.scss */
+  .team_members .member {
+    display: inline-block;
+    width: 24%;
+    box-sizing: border-box;
+    margin-bottom: 2em;
+    vertical-align: top; }
+  /* line 291, all.css.scss */
+  .team_members .info {
+    padding-right: 1em; }
+  /* line 295, all.css.scss */
+  .team_members figure {
+    width: auto;
+    padding-left: inherit;
+    margin-left: inherit;
+    white-space: inherit;
+    border-style: none;
+    display: inherit; }
+    /* line 303, all.css.scss */
+    .team_members figure img {
+      border-style: none; }
+  /* line 308, all.css.scss */
+  .team_members .background:before, .team_members .contact:before {
+    display: block;
+    font-size: 1em;
+    opacity: .7; }
+  /* line 314, all.css.scss */
+  .team_members .background:before {
+    content: 'Background:'; }
+  /* line 318, all.css.scss */
+  .team_members .contact:before {
+    content: 'Contact:'; }
+  /* line 322, all.css.scss */
+  .team_members .background, .team_members .contact {
+    font-size: .8em;
+    margin-bottom: 1em; }
+  /* line 327, all.css.scss */
+  .team_members .contact * {
+    font-size: 1.3em; }
+  @media screen and (max-width: 1000px) {
+    /* line 332, all.css.scss */
+    .team_members .member {
+      display: inline-block;
+      width: 49%; }
+      /* line 336, all.css.scss */
+      .team_members .member .info {
+        width: 80%; }
+      /* line 340, all.css.scss */
+      .team_members .member figure {
+        height: 20em;
+        width: 100%;
+        overflow: hidden; } }
